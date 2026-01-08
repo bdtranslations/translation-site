@@ -268,10 +268,58 @@
     </div>
 
     <h2>Contact</h2>
-    <div class="contact-info">
-        <p>To request a quote or discuss your project:</p>
-        <p>📧 <strong>info@bdtranslations.com</strong></p>
-        <p>I typically respond within 24 hours and am happy to answer any questions before you commit to a project.</p>
+    <div class="contact-form">
+        <h3 style="margin-top: 0;">Request a Quote</h3>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-group">
+                <label for="name">Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="document-type">Document Type <span class="required">*</span></label>
+                <select id="document-type" name="document-type" required>
+                    <option value="">Please select...</option>
+                    <option value="journal-article">Journal Article</option>
+                    <option value="conference-paper">Conference Paper</option>
+                    <option value="thesis-chapter">Thesis/Dissertation Chapter</option>
+                    <option value="full-thesis">Full Thesis/Dissertation</option>
+                    <option value="research-proposal">Research Proposal</option>
+                    <option value="grant-application">Grant Application</option>
+                    <option value="essay-coursework">Essay/Coursework</option>
+                    <option value="other">Other (please specify in message)</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="word-count">Approximate Word Count <span class="required">*</span></label>
+                <input type="text" id="word-count" name="word-count" placeholder="e.g. 5000" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="deadline">Deadline</label>
+                <input type="date" id="deadline" name="deadline">
+            </div>
+    
+            <div class="form-group">
+                <label for="message">Additional Details <span class="required">*</span></label>
+                <textarea id="message" name="message" placeholder="Please include any specific requirements (referencing style, target journal, service type needed, etc.)" required></textarea>
+            </div>
+    
+            <button type="submit" class="submit-btn">Send Enquiry</button>
+    
+            <p class="form-note">I typically respond within 24 hours. Your information will be kept confidential.</p>
+        </form>
+    
+        <div class="alternative-contact">
+            <p><strong>Prefer email?</strong></p>
+            <p>You can also reach me directly at: <strong>info@bdtranslations.com</strong></p>
+        </div>
     </div>
 
     <footer>
