@@ -55,12 +55,46 @@
             font-size: 0.9em;
         }
         .faq-item {
-            margin-bottom: 25px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
         }
         .faq-question {
             font-weight: bold;
             color: #2c3e50;
-            margin-bottom: 5px;
+            padding: 15px;
+            cursor: pointer;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+        .faq-question:hover {
+            background-color: #e9ecef;
+        }
+        .faq-toggle {
+            font-size: 1.5em;
+            font-weight: normal;
+            color: #3498db;
+            transition: transform 0.3s;
+        }
+        .faq-toggle.active {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 15px;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 15px;
+        }
+        .faq-answer p {
+            margin: 0;
         }
         ul {
             margin-left: 20px;
@@ -232,39 +266,52 @@
 
     <h2>FAQ</h2>
     <div class="faq-item">
-        <p class="faq-question">How much does proofreading cost?</p>
-        <p>Rates depend on the level of editing required and document length. After reviewing your document, I'll provide a clear quote with no hidden fees. As a guide, standard proofreading typically ranges from NT$1.5-2.5 per word, whilst developmental editing may be higher.</p>
+        <div class="faq-question">How much does proofreading cost? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">
+            <p>Rates depend on the level of editing required and document length. After reviewing your document, I'll provide a clear quote with no hidden fees. As a guide, standard proofreading typically ranges from NT$1.5-2.5 per word, whilst developmental editing may be higher.</p>
+        </div>
     </div>
-
+    
     <div class="faq-item">
-        <p class="faq-question">What format should I send my document in?</p>
-        <p>Microsoft Word (.docx) is preferred, as this allows tracked changes. I'm also comfortable working with LaTeX files and can provide corrections and suggestions in whichever format suits your workflow. PDF and other formats can be discussed.</p>
+        <div class="faq-question">What format should I send my document in? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">
+            <p>Microsoft Word (.docx) is preferred, as this allows tracked changes. I'm also comfortable working with LaTeX files and can provide corrections and suggestions in whichever format suits your workflow. PDF and other formats can be discussed.</p>
+        </div>
     </div>
-
-
+    
     <div class="faq-item">
-        <p class="faq-question">Do you translate Chinese to English?</p>
-        <p>My primary focus is proofreading English texts written by Chinese speakers. If you require translation, please enquire and I can discuss whether your project suits my current capacity.</p>
+        <div class="faq-question">Do you translate Chinese to English? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">
+            <p>My primary focus is proofreading English texts written by Chinese speakers. If you require translation, please enquire and I can discuss whether your project suits my current capacity.</p>
+        </div>
     </div>
-
+    
     <div class="faq-item">
-        <p class="faq-question">Can you help with journal-specific requirements?</p>
-        <p>Yes. If you're submitting to a specific journal, let me know and I'll ensure the document follows their style guidelines.</p>
+        <div class="faq-question">Can you help with journal-specific requirements? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">
+            <p>Yes. If you're submitting to a specific journal, let me know and I'll ensure the document follows their style guidelines.</p>
+        </div>
     </div>
-
+    
     <div class="faq-item">
-        <p class="faq-question">What if I need revisions after receiving the proofread document?</p>
-        <p>Minor clarifications are always welcome at no extra charge. More substantial revisions can be discussed depending on the scope of changes.</p>
+        <div class="faq-question">What if I need revisions after receiving the proofread document? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">
+            <p>Minor clarifications are always welcome at no extra charge. More substantial revisions can be discussed depending on the scope of changes.</p>
+        </div>
     </div>
-
+    
     <div class="faq-item">
-        <p class="faq-question">Are you familiar with Taiwan's academic system?</p>
-        <p>Yes. Having studied in Taiwan as a foreign student, I understand the local academic context and the particular challenges Taiwanese students face when writing in English.</p>
+        <div class="faq-question">Are you familiar with Taiwan's academic system? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">
+            <p>Yes. Having studied in Taiwan as a foreign student, I understand the local academic context and the particular challenges Taiwanese students face when writing in English.</p>
+        </div>
     </div>
-
+    
     <div class="faq-item">
-        <p class="faq-question">How do I know my work is confidential?</p>
-        <p>All documents are treated with strict confidentiality. I do not share or discuss your work with third parties.</p>
+        <div class="faq-question">How do I know my work is confidential? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">
+            <p>All documents are treated with strict confidentiality. I do not share or discuss your work with third parties.</p>
+        </div>
     </div>
 
     <h2>Contact</h2>
@@ -326,5 +373,22 @@
     <footer>
         <p>© 2026 BDTranslations | English Proofreading Services for Academic Writers</p>
     </footer>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-question');
+        
+        faqItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const toggle = this.querySelector('.faq-toggle');
+                
+                answer.classList.toggle('active');
+                toggle.classList.toggle('active');
+            });
+        });
+    });
+    </script>
+
 </body>
 </html>
