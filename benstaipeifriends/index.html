@@ -1,121 +1,104 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friends Reference Chart</title>
+    <title>Ben's Taipei Friends</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 2rem;
-            min-height: 100vh;
-        }
-        
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-        
-        h1 {
-            color: white;
-            text-align: center;
-            margin-bottom: 2rem;
-            font-size: 2.5rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-        }
-        
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-        }
-        
-        .card {
-            background: white;
-            border-radius: 16px;
-            padding: 1.5rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-        }
-        
-        .photo-placeholder {
-            width: 120px;
-            height: 120px;
-            background: #9b59b6;
-            border-radius: 50%;
-            margin: 0 auto 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            color: white;
-            font-weight: bold;
-        }
-        
-        .card h2 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 0.5rem;
-            font-size: 1.5rem;
-        }
-        
-        .info-grid {
-            margin-top: 1rem;
-        }
-        
-        .info-row {
-            display: grid;
-            grid-template-columns: 120px 1fr;
-            padding: 0.75rem 0;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .info-row:last-child {
-            border-bottom: none;
-        }
-        
-        .info-label {
-            font-weight: 600;
-            color: #667eea;
-        }
-        
-        .info-value {
-            color: #555;
-        }
-        
-        .editable {
-            background: none;
-            border: none;
-            width: 100%;
-            font-family: inherit;
-            font-size: inherit;
-            color: inherit;
-            padding: 0.25rem;
-            border-radius: 4px;
-            transition: background 0.2s ease;
-        }
-        
-        .editable:hover {
-            background: #f5f5f5;
-        }
-        
-        .editable:focus {
-            outline: 2px solid #667eea;
-            background: #f5f5f5;
-        }
-    </style>
+
+```
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 2rem;
+        min-height: 100vh;
+    }
+    
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        color: white;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+    }
+    
+    .card {
+        background: white;
+        border-radius: 16px;
+        padding: 1.5rem;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    }
+    
+    .photo-placeholder {
+        width: 120px;
+        height: 120px;
+        background: #9b59b6;
+        border-radius: 50%;
+        margin: 0 auto 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .card h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+    }
+    
+    .info-grid {
+        margin-top: 1rem;
+    }
+    
+    .info-row {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .info-row:last-child {
+        border-bottom: none;
+    }
+    
+    .info-label {
+        font-weight: 600;
+        color: #667eea;
+    }
+    
+    .info-value {
+        color: #555;
+    }
+</style>
+```
+
 </head>
 <body>
     <div class="container">
@@ -123,166 +106,169 @@
         <div class="grid">
             <div class="card">
                 <div class="photo-placeholder">TL</div>
-                <h2 contenteditable="true" class="editable">Tony</h2>
+                <h2>Tony</h2>
                 <div class="info-grid">
                     <div class="info-row">
                         <div class="info-label">Occupation:</div>
-                        <div class="info-value" contenteditable="true" class="editable">Secondary School Teacher</div>
+                        <div class="info-value">Secondary School Teacher</div>
                     </div>
                     <div class="info-row">
                         <div class="info-label">When we met:</div>
-                        <div class="info-value" contenteditable="true" class="editable">2006, while he was studying geography at NTNU</div>
+                        <div class="info-value">2006, while he was studying geography at NTNU</div>
                     </div>
                     <div class="info-row">
                         <div class="info-label">Hooked up with:</div>
-                        <div class="info-value" contenteditable="true" class="editable">No</div>
+                        <div class="info-value">No</div>
                     </div>
                     <div class="info-row">
                         <div class="info-label">Interests:</div>
-                        <div class="info-value" contenteditable="true" class="editable">Hiking, travelling</div>
+                        <div class="info-value">Hiking, travelling</div>
                     </div>
                     <div class="info-row">
                         <div class="info-label">Fun fact:</div>
-                        <div class="info-value" contenteditable="true" class="editable">Owns a Vespa, super responsible and reliable, has a German BF (LDR)</div>
+                        <div class="info-value">Owns a Vespa, super responsible and reliable, has a German BF (LDR)</div>
                     </div>
                 </div>
             </div>
-            
-            <div class="card">
-                <div class="photo-placeholder" style="background: #3498db;">TC</div>
-                <h2 contenteditable="true" class="editable">Truman</h2>
-                <div class="info-grid">
-                    <div class="info-row">
-                        <div class="info-label">Occupation:</div>
-                        <div class="info-value" contenteditable="true" class="editable">Architect</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">When we met:</div>
-                        <div class="info-value" contenteditable="true" class="editable">2017, while he was studying in Taipei</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">Hooked up with:</div>
-                        <div class="info-value" contenteditable="true" class="editable">Two or three times, not since 2019</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">Interests:</div>
-                        <div class="info-value" contenteditable="true" class="editable">Photography, art, travelling, cycling</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">Fun fact:</div>
-                        <div class="info-value" contenteditable="true" class="editable">Originally from Taichung, did semester abroad in Trier, high-pitched voice, travels frequently, does some drag</div>
-                    </div>
+
+```
+        <div class="card">
+            <div class="photo-placeholder" style="background: #3498db;">TC</div>
+            <h2>Truman</h2>
+            <div class="info-grid">
+                <div class="info-row">
+                    <div class="info-label">Occupation:</div>
+                    <div class="info-value">Architect</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">When we met:</div>
+                    <div class="info-value">2017, while he was studying in Taipei</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Hooked up with:</div>
+                    <div class="info-value">Two or three times, not since 2019</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Interests:</div>
+                    <div class="info-value">Photography, art, travelling, cycling</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Fun fact:</div>
+                    <div class="info-value">Originally from Taichung, did semester abroad in Trier, high-pitched voice, travels frequently, does some drag</div>
                 </div>
             </div>
-            
-            <div class="card">
-                <div class="photo-placeholder" style="background: #f39c12;">AC</div>
-                <h2 contenteditable="true" class="editable">Andy</h2>
-                <div class="info-grid">
-                    <div class="info-row">
-                        <div class="info-label">Occupation:</div>
-                        <div class="info-value" contenteditable="true" class="editable">English Tutor, Bartender</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">When we met:</div>
-                        <div class="info-value" contenteditable="true" class="editable">2017, while he was studying linguistics at NTNU</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">Hooked up with:</div>
-                        <div class="info-value" contenteditable="true" class="editable">Once or twice</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">Interests:</div>
-                        <div class="info-value" contenteditable="true" class="editable">Languages</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">Fun fact:</div>
-                        <div class="info-value" contenteditable="true" class="editable">Half Taiwanese, half HK, did semester (year?) abroad in Kuwait, moved to Hong Kong with his then-bf, now lives there with his mum</div>
-                    </div>
+        </div>
+        
+        <div class="card">
+            <div class="photo-placeholder" style="background: #f39c12;">AC</div>
+            <h2>Andy</h2>
+            <div class="info-grid">
+                <div class="info-row">
+                    <div class="info-label">Occupation:</div>
+                    <div class="info-value">English Tutor, Bartender</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">When we met:</div>
+                    <div class="info-value">2017, while he was studying linguistics at NTNU</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Hooked up with:</div>
+                    <div class="info-value">Once or twice</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Interests:</div>
+                    <div class="info-value">Languages</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Fun fact:</div>
+                    <div class="info-value">Half Taiwanese, half HK, did semester (year?) abroad in Kuwait, moved to Hong Kong with his then-bf, now lives there with his mum</div>
                 </div>
             </div>
-            
-            <div class="card">
-                <div class="photo-placeholder" style="background: #16a085;">BW</div>
-                <h2 contenteditable="true" class="editable">Brad</h2>
-                <div class="info-grid">
-                    <div class="info-row">
-                        <div class="info-label">Occupation:</div>
-                        <div class="info-value" contenteditable="true" class="editable">Accountant</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">When we met:</div>
-                        <div class="info-value" contenteditable="true" class="editable">2017, during his final year of law school at NTU</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">Hooked up with:</div>
-                        <div class="info-value" contenteditable="true" class="editable">No, although he used to be into me (I think)</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">Interests:</div>
-                        <div class="info-value" contenteditable="true" class="editable">Wine tasting, travelling, raves, learning languages</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">Fun fact:</div>
-                        <div class="info-value" contenteditable="true" class="editable">Travels frequently, met in London during Covid</div>
-                    </div>
+        </div>
+        
+        <div class="card">
+            <div class="photo-placeholder" style="background: #16a085;">BW</div>
+            <h2>Brad</h2>
+            <div class="info-grid">
+                <div class="info-row">
+                    <div class="info-label">Occupation:</div>
+                    <div class="info-value">Accountant</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">When we met:</div>
+                    <div class="info-value">2017, during his final year of law school at NTU</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Hooked up with:</div>
+                    <div class="info-value">No, although he used to be into me (I think)</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Interests:</div>
+                    <div class="info-value">Wine tasting, travelling, raves, learning languages</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Fun fact:</div>
+                    <div class="info-value">Travels frequently, met in London during Covid</div>
                 </div>
             </div>
-            
-            <div class="card">
-                <div class="photo-placeholder" style="background: #e74c3c;">T</div>
-                <h2 contenteditable="true" class="editable">Tim(othy)</h2>
-                <div class="info-grid">
-                    <div class="info-row">
-                        <div class="info-label">Occupation:</div>
-                        <div class="info-value" contenteditable="true" class="editable">Student (Media Studies)</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">When we met:</div>
-                        <div class="info-value" contenteditable="true" class="editable">2023</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">Hooked up with:</div>
-                        <div class="info-value" contenteditable="true" class="editable">No</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">Interests:</div>
-                        <div class="info-value" contenteditable="true" class="editable">Travelling, partying, fashion</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">Fun fact:</div>
-                        <div class="info-value" contenteditable="true" class="editable">Speaks French, did internship in Seattle</div>
-                    </div>
+        </div>
+        
+        <div class="card">
+            <div class="photo-placeholder" style="background: #e74c3c;">T</div>
+            <h2>Tim(othy)</h2>
+            <div class="info-grid">
+                <div class="info-row">
+                    <div class="info-label">Occupation:</div>
+                    <div class="info-value">Student (Media Studies)</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">When we met:</div>
+                    <div class="info-value">2023</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Hooked up with:</div>
+                    <div class="info-value">No</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Interests:</div>
+                    <div class="info-value">Travelling, partying, fashion</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Fun fact:</div>
+                    <div class="info-value">Speaks French, did internship in Seattle</div>
                 </div>
             </div>
-            
-            <div class="card">
-                <div class="photo-placeholder" style="background: #2ecc71;">VC</div>
-                <h2 contenteditable="true" class="editable">Vena(ncio)</h2>
-                <div class="info-grid">
-                    <div class="info-row">
-                        <div class="info-label">Occupation:</div>
-                        <div class="info-value" contenteditable="true" class="editable">Student (Engineering)</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">When we met:</div>
-                        <div class="info-value" contenteditable="true" class="editable">2024</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">Hooked up with:</div>
-                        <div class="info-value" contenteditable="true" class="editable">Once</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">Interests:</div>
-                        <div class="info-value" contenteditable="true" class="editable">Cycling, museums</div>
-                    </div>
-                    <div class="info-row">
-                        <div class="info-label">Fun fact:</div>
-                        <div class="info-value" contenteditable="true" class="editable">From Paraguay, great listener, short king</div>
-                    </div>
+        </div>
+        
+        <div class="card">
+            <div class="photo-placeholder" style="background: #2ecc71;">VC</div>
+            <h2>Vena(ncio)</h2>
+            <div class="info-grid">
+                <div class="info-row">
+                    <div class="info-label">Occupation:</div>
+                    <div class="info-value">Student (Engineering)</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">When we met:</div>
+                    <div class="info-value">2024</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Hooked up with:</div>
+                    <div class="info-value">Once</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Interests:</div>
+                    <div class="info-value">Cycling, museums</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Fun fact:</div>
+                    <div class="info-value">From Paraguay, great listener, short king</div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+```
+
 </body>
 </html>
