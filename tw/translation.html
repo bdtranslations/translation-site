@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中翻英翻譯服務 | BDTranslations</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft JhengHei', 'PingFang TC', 'Noto Sans TC', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 40px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #34495e;
+            margin-top: 25px;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            margin-top: -10px;
+            margin-bottom: 30px;
+        }
+        .highlight-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 20px;
+            margin: 30px 0;
+        }
+        .contact-info {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #2c3e50;
+            padding: 15px;
+            cursor: pointer;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+        .faq-question:hover {
+            background-color: #e9ecef;
+        }
+        .faq-toggle {
+            font-size: 1.5em;
+            font-weight: normal;
+            color: #3498db;
+            transition: transform 0.3s;
+        }
+        .faq-toggle.active {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 15px;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 15px;
+        }
+        .faq-answer p {
+            margin: 0;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        /* Contact Form Styles */
+        .contact-form {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .form-group select {
+            cursor: pointer;
+        }
+        .submit-btn {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+        .required {
+            color: #e74c3c;
+        }
+        .form-note {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-top: 15px;
+        }
+        .alternative-contact {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: right; margin-bottom: 20px;">
+        <a href="/tw/" style="color: #3498db; text-decoration: none; margin-right: 15px;">校對服務</a>
+        <a href="/translation.html" style="color: #3498db; text-decoration: none;">English</a>
+    </div>
+    
+    <h1>中翻英翻譯服務</h1>
+    <p class="subtitle">專業學術及商業文件翻譯服務</p>
+
+    <h2>關於翻譯服務</h2>
+    <p><strong>Benjamin Dohne</strong><br>
+    英國劍橋</p>
+    
+    <p>專業譯者,專精於中英翻譯之學術及商業文本。持有國立臺灣大學中英翻譯學程結業證書,擁有15年以上中文文本翻譯經驗。</p>
+    
+    <div class="highlight-box">
+        <p><strong>注意:</strong>本人主要服務為校對。翻譯服務僅限特定案件,視專案範圍、時程及主題而定。對於大多數學術寫作專案,建議直接以英文撰寫並進行校對,而非翻譯,如此可保留您的語氣並確保語言準確性。</p>
+    </div>
+
+    <h2>翻譯服務項目</h2>
+    
+    <h3>學術翻譯</h3>
+    <p>學術文本之中翻英服務,維持學術嚴謹性及學科專業術語。</p>
+    <p><strong>適用文件:</strong></p>
+    <ul>
+        <li>研究摘要</li>
+        <li>研討會簡報資料</li>
+        <li>研究計畫(原文須為中文時)</li>
+        <li>學術履歷及聲明</li>
+    </ul>
+
+    <h3>商業翻譯</h3>
+    <p>商業及專業文件之翻譯,要求精確及適當語域。</p>
+    <p><strong>適用文件:</strong></p>
+    <ul>
+        <li>商業書信</li>
+        <li>報告及簡報</li>
+        <li>行銷及宣傳資料</li>
+        <li>網站內容</li>
+    </ul>
+
+    <h3>學科領域</h3>
+    <p>翻譯服務涵蓋人文、社會科學及部分商業與技術領域。複雜理工科翻譯可能需要專業術語諮詢。</p>
+
+    <h3>翻譯流程</h3>
+    <p>所有譯文均經仔細審閱,確保準確性、自然英文表達及適合目標讀者之語氣。必要時,會就模糊段落向您查詢,以確保譯文反映您的原意。</p>
+
+    <h2>費用及時程</h2>
+    <p>翻譯費用及時程視文本複雜度、主題及文件長度而定。概略如下:</p>
+    <ul>
+        <li>費用通常為每中文字NT$3-5</li>
+        <li>完稿時間一般為每工作天1,500-2,000字</li>
+        <li>複雜或技術性文本可能需要額外時間</li>
+        <li>急件有時可配合處理,但需加收費用</li>
+    </ul>
+    <p>請提供您的專案細節以取得精確報價。</p>
+
+    <h2>常見問題</h2>
+    
+    <div class="faq-item">
+        <div class="faq-question">學術作品應該翻譯還是校對? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">
+            <p>對於大多數學術投稿(期刊論文、學位論文),建議直接以英文撰寫並進行校對,而非由中文翻譯。此方式可保留您的學術語氣且更有效率。翻譯較適用於必須以中文為原文之文件,如摘要、履歷或中文研討會資料等。</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">是否提供英翻中服務? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">
+            <p>不提供。本人僅專精於中翻英。如需英翻中服務,可應要求推薦合格譯者。</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">能否翻譯繁體及簡體中文? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">
+            <p>可以,繁體及簡體中文文本皆可處理。</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">應以何種格式寄送文件? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">
+            <p>建議使用Microsoft Word(.docx)。PDF檔案可接受但可能需要額外處理時間。大型專案請事先討論格式需求。</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">是否提供認證翻譯? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">
+            <p>不提供。本人不提供認證或公證翻譯。本服務適用於一般專業及學術用途。法律文件如需認證,請洽認證翻譯服務機構。</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">如何確保翻譯品質? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">
+            <p>所有譯文均經仔細審閱,確保準確性、自然表達及適當術語。遇模糊段落會與您聯繫釐清,確保譯文準確反映您的原意。必要時會進行研究以確認學科專業術語。</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">文件是否保密? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">
+            <p>是的。所有文件皆嚴格保密處理。不會與第三方分享或討論您的作品。</p>
+        </div>
+    </div>
+
+    <h2>聯絡方式</h2>
+    <div class="contact-form">
+        <h3 style="margin-top: 0;">索取翻譯報價</h3>
+        <form action="https://formsubmit.co/673a2100e768060a022038141e3b77ec" method="POST">
+            <input type="hidden" name="_replyto" value="email">
+            <input type="hidden" name="_subject" value="翻譯服務詢問">
+            
+            <div class="form-group">
+                <label for="name">姓名 <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">電子郵件 <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="document-type">文件類型 <span class="required">*</span></label>
+                <select id="document-type" name="document-type" required>
+                    <option value="">請選擇...</option>
+                    <option value="research-abstract">研究摘要</option>
+                    <option value="conference-materials">研討會資料</option>
+                    <option value="research-proposal">研究計畫</option>
+                    <option value="cv-statement">履歷/學術聲明</option>
+                    <option value="business-correspondence">商業書信</option>
+                    <option value="report-presentation">報告/簡報</option>
+                    <option value="marketing-materials">行銷資料</option>
+                    <option value="website-content">網站內容</option>
+                    <option value="other">其他(請於訊息中說明)</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="character-count">約略字數 <span class="required">*</span></label>
+                <input type="text" id="character-count" name="character-count" placeholder="例如:3000字" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="deadline">截稿期限</label>
+                <input type="date" id="deadline" name="deadline">
+            </div>
+    
+            <div class="form-group">
+                <label for="message">專案細節 <span class="required">*</span></label>
+                <textarea id="message" name="message" placeholder="請說明您的翻譯專案,包括主題、用途及任何特殊需求" required></textarea>
+            </div>
+    
+            <button type="submit" class="submit-btn">送出詢問</button>
+    
+            <p class="form-note">通常24小時內回覆。您的資訊將予以保密。</p>
+        </form>
+    
+        <div class="alternative-contact">
+            <p><strong>偏好使用電子郵件?</strong></p>
+            <p>您亦可直接來信至:<strong>info@bdtranslations.com</strong></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 BDTranslations | 專業中英翻譯服務</p>
+    </footer>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-question');
+        
+        faqItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const toggle = this.querySelector('.faq-toggle');
+                
+                answer.classList.toggle('active');
+                toggle.classList.toggle('active');
+            });
+        });
+    });
+    </script>
+
+</body>
+</html>
