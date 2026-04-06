@@ -268,7 +268,7 @@ Cambridge, UK</p>
 
 <h2>How It Works</h2>
 <ol class="steps">
-    <li><strong>Send your document</strong> to <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ceada1a0baafadba8eacaababcafa0bda2afbaa7a1a0bde0ada1a3">[email&#160;protected]</a> with details about your deadline and any specific requirements (referencing style, target journal, etc.)</li>
+    <li><strong>Send your document</strong> to contact&#64;bdtranslations.com with details about your deadline and any specific requirements (referencing style, target journal, etc.)</li>
     <li><strong>Receive a quote</strong> within 24 hours, including estimated turnaround time</li>
     <li><strong>Receive your proofread document</strong> with tracked changes and comments explaining suggested revisions</li>
 </ol>
@@ -296,7 +296,7 @@ Cambridge, UK</p>
 </div>
 
 <div class="faq-item">
-    <div class="faq-question">Do you also provide translation services? <span class="faq-toggle">+</span></div>
+    <div class="faq-question">Do you also provide translation or tutoring services? <span class="faq-toggle">+</span></div>
     <div class="faq-answer">
         <p>Yes, I offer Chinese to English translation for academic and professional documents. For most academic writing, proofreading your English text is generally more efficient than translating from Chinese, but translation is ideal for documents that must originate in Chinese. See the <a href="/translation.html" style="color: #3498db;">translation services page</a> for details. I also offer <a href="/tutoring.html" style="color: #3498db;">private English tutoring</a>.</p>
     </div>
@@ -382,7 +382,7 @@ Cambridge, UK</p>
 
     <div class="alternative-contact">
         <p><strong>Prefer email?</strong></p>
-        <p>You can also reach me directly at: <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0c6f6362786d6f784c6e68787e6d627f606d786563627f226f6361">[email&#160;protected]</a></strong></p>
+        <p>You can also reach me directly at: <strong>contact&#64;bdtranslations.com</strong></p>
     </div>
 </div>
 
@@ -390,6 +390,21 @@ Cambridge, UK</p>
     <p>© 2026 BDTranslations | English Proofreading Services for Academic Writers</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 document.addEventListener('DOMContentLoaded', function() {
-    const faqItems = document.querySelectorAll('.faq-questi
+    const faqItems = document.querySelectorAll('.faq-question');
+    
+    faqItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            const toggle = this.querySelector('.faq-toggle');
+            
+            answer.classList.toggle('active');
+            toggle.classList.toggle('active');
+        });
+    });
+});
+</script>
+
+</body>
+</html>

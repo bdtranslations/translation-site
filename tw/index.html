@@ -268,7 +268,7 @@
 
 <h2>如何委託</h2>
 <ol class="steps">
-    <li><strong>寄送文件</strong>至 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7d1e1213091c1e093d1f19090f1c130e111c091412130e531e1210">[email&#160;protected]</a>，並註明截稿期限及任何特殊需求(參考文獻格式、目標期刊等)</li>
+    <li><strong>寄送文件</strong>至 contact&#64;bdtranslations.com，並註明截稿期限及任何特殊需求(參考文獻格式、目標期刊等)</li>
     <li><strong>收到報價</strong>24小時內回覆，包含預估完稿時間</li>
     <li><strong>收到校對文件</strong>內含修訂追蹤及說明修改原因之註解</li>
 </ol>
@@ -296,7 +296,7 @@
 </div>
 
 <div class="faq-item">
-    <div class="faq-question">是否也提供翻譯服務? <span class="faq-toggle">+</span></div>
+    <div class="faq-question">是否也提供翻譯或英語教學服務? <span class="faq-toggle">+</span></div>
     <div class="faq-answer">
         <p>是的，提供學術及商業文件之中翻英服務。對於大多數學術寫作，校對英文文本通常較翻譯中文更有效率，但翻譯適用於必須以中文為原文之文件。詳情請參閱<a href="/tw/translation.html" style="color: #3498db;">翻譯服務頁面</a>。亦提供<a href="/tw/tutoring.html" style="color: #3498db;">一對一英語教學</a>服務。</p>
     </div>
@@ -382,7 +382,7 @@
 
     <div class="alternative-contact">
         <p><strong>偏好使用電子郵件?</strong></p>
-        <p>您亦可直接來信至： <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5b3834352f3a382f1b393f2f293a3528373a2f3234352875383436">[email&#160;protected]</a></strong></p>
+        <p>您亦可直接來信至： <strong>contact&#64;bdtranslations.com</strong></p>
     </div>
 </div>
 
@@ -390,6 +390,21 @@
     <p>© 2026 BDTranslations | 學術作者英文校對服務</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 document.addEventListener('DOMContentLoaded', function() {
-    const faqItems = document.querySelectorAll('.faq-questi
+    const faqItems = document.querySelectorAll('.faq-question');
+    
+    faqItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            const toggle = this.querySelector('.faq-toggle');
+            
+            answer.classList.toggle('active');
+            toggle.classList.toggle('active');
+        });
+    });
+});
+</script>
+
+</body>
+</html>
