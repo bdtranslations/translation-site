@@ -268,7 +268,7 @@
 
 <h2>如何委託</h2>
 <ol class="steps">
-    <li><strong>寄送文件</strong>至 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a6c5c9c8d2c7c5d2e6c4c2d2d4c7c8d5cac7d2cfc9c8d588c5c9cb">[email&#160;protected]</a>，並註明截稿期限及任何特殊需求(參考文獻格式、目標期刊等)</li>
+    <li><strong>寄送文件</strong>至 contact@bdtranslations.com，並註明截稿期限及任何特殊需求(參考文獻格式、目標期刊等)</li>
     <li><strong>收到報價</strong>24小時內回覆，包含預估完稿時間</li>
     <li><strong>收到校對文件</strong>內含修訂追蹤及說明修改原因之註解</li>
 </ol>
@@ -382,7 +382,7 @@
 
     <div class="alternative-contact">
         <p><strong>偏好使用電子郵件?</strong></p>
-        <p>您亦可直接來信至： <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c8aba7a6bca9abbc88aaacbcbaa9a6bba4a9bca1a7a6bbe6aba7a5">[email&#160;protected]</a></strong></p>
+        <p>您亦可直接來信至： <strong>contact@bdtranslations.com</strong></p>
     </div>
 </div>
 
@@ -390,6 +390,21 @@
     <p>© 2026 BDTranslations | 學術作者英文校對服務</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 document.addEventListener('DOMContentLoaded', function() {
-    const faqItems = document.querySelectorAll('.faq-question'
+    const faqItems = document.querySelectorAll('.faq-question');
+    
+    faqItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            const toggle = this.querySelector('.faq-toggle');
+            
+            answer.classList.toggle('active');
+            toggle.classList.toggle('active');
+        });
+    });
+});
+</script>
+
+</body>
+</html>

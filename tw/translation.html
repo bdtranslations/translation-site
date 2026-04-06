@@ -323,7 +323,7 @@
 
     <div class="alternative-contact">
         <p><strong>偏好使用電子郵件?</strong></p>
-        <p>您亦可直接來信至： <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="53303c3d273230271331372721323d203f32273a3c3d207d303c3e">[email&#160;protected]</a></strong></p>
+        <p>您亦可直接來信至： <strong>contact@bdtranslations.com</strong></p>
     </div>
 </div>
 
@@ -331,10 +331,21 @@
     <p>© 2026 BDTranslations | 專業中英翻譯服務</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 document.addEventListener('DOMContentLoaded', function() {
     const faqItems = document.querySelectorAll('.faq-question');
     
     faqItems.forEach(item => {
         item.addEventListener('click', function() {
-            const answer = this.nextEl
+            const answer = this.nextElementSibling;
+            const toggle = this.querySelector('.faq-toggle');
+            
+            answer.classList.toggle('active');
+            toggle.classList.toggle('active');
+        });
+    });
+});
+</script>
+
+</body>
+</html>

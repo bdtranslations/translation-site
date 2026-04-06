@@ -295,21 +295,21 @@
         <p>&copy; 2026 BDTranslations | 華語學習者一對一英語教學</p>
     </footer>
 
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const faqItems = document.querySelectorAll('.faq-question');
-        
-        faqItems.forEach(item => {
-            item.addEventListener('click', function() {
-                const answer = this.nextElementSibling;
-                const toggle = this.querySelector('.faq-toggle');
-                
-                answer.classList.toggle('active');
-                toggle.classList.toggle('active');
-            });
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const faqItems = document.querySelectorAll('.faq-question');
+    
+    faqItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            const toggle = this.querySelector('.faq-toggle');
+            
+            answer.classList.toggle('active');
+            toggle.classList.toggle('active');
         });
     });
-    </script>
+});
+</script>
 
 </body>
 </html>

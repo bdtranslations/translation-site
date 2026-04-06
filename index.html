@@ -268,7 +268,7 @@ Cambridge, UK</p>
 
 <h2>How It Works</h2>
 <ol class="steps">
-    <li><strong>Send your document</strong> to <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="70131f1e041113043012140402111e031c1104191f1e035e131f1d">[email&#160;protected]</a> with details about your deadline and any specific requirements (referencing style, target journal, etc.)</li>
+    <li><strong>Send your document</strong> to contact@bdtranslations.com with details about your deadline and any specific requirements (referencing style, target journal, etc.)</li>
     <li><strong>Receive a quote</strong> within 24 hours, including estimated turnaround time</li>
     <li><strong>Receive your proofread document</strong> with tracked changes and comments explaining suggested revisions</li>
 </ol>
@@ -382,7 +382,7 @@ Cambridge, UK</p>
 
     <div class="alternative-contact">
         <p><strong>Prefer email?</strong></p>
-        <p>You can also reach me directly at: <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b7d4d8d9c3d6d4c3f7d5d3c3c5d6d9c4dbd6c3ded8d9c499d4d8da">[email&#160;protected]</a></strong></p>
+        <p>You can also reach me directly at: <strong>contact@bdtranslations.com</strong></p>
     </div>
 </div>
 
@@ -390,6 +390,21 @@ Cambridge, UK</p>
     <p>© 2026 BDTranslations | English Proofreading Services for Academic Writers</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 document.addEventListener('DOMContentLoaded', function() {
-    const faqItems = document.querySelectorAll('.faq-question'
+    const faqItems = document.querySelectorAll('.faq-question');
+    
+    faqItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            const toggle = this.querySelector('.faq-toggle');
+            
+            answer.classList.toggle('active');
+            toggle.classList.toggle('active');
+        });
+    });
+});
+</script>
+
+</body>
+</html>

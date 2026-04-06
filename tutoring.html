@@ -287,7 +287,7 @@
 
         <div class="alternative-contact">
             <p><strong>Prefer email?</strong></p>
-            <p>You can also reach me directly at: <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5930373f36193b3d2d2b38372a35382d3036372a773a3634">[email&#160;protected]</a></strong></p>
+            <p>You can also reach me directly at: <strong>contact@bdtranslations.com</strong></p>
         </div>
     </div>
 
@@ -295,11 +295,21 @@
         <p>&copy; 2026 BDTranslations | Private English Tutoring for Mandarin-Speaking Learners</p>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const faqItems = document.querySelectorAll('.faq-question');
-        
-        faqItems.forEach(item => {
-            item.addEventListener('click', function() {
-                const answer = this.nextElementSibling;
-                co
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const faqItems = document.querySelectorAll('.faq-question');
+    
+    faqItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            const toggle = this.querySelector('.faq-toggle');
+            
+            answer.classList.toggle('active');
+            toggle.classList.toggle('active');
+        });
+    });
+});
+</script>
+
+</body>
+</html>
