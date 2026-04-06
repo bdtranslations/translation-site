@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一對一英語教學 | BDTranslations</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft JhengHei', 'PingFang TC', 'Noto Sans TC', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 40px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #34495e;
+            margin-top: 25px;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            margin-top: -10px;
+            margin-bottom: 30px;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #2c3e50;
+            padding: 15px;
+            cursor: pointer;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+        .faq-question:hover {
+            background-color: #e9ecef;
+        }
+        .faq-toggle {
+            font-size: 1.5em;
+            font-weight: normal;
+            color: #3498db;
+            transition: transform 0.3s;
+        }
+        .faq-toggle.active {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 15px;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 15px;
+        }
+        .faq-answer p {
+            margin: 0;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        /* Contact Form Styles */
+        .contact-form {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .form-group select {
+            cursor: pointer;
+        }
+        .submit-btn {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+        .required {
+            color: #e74c3c;
+        }
+        .form-note {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-top: 15px;
+        }
+        .alternative-contact {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: right; margin-bottom: 20px;">
+        <a href="/tw/" style="color: #3498db; text-decoration: none; margin-right: 15px;">校對服務</a>
+        <a href="/tw/translation.html" style="color: #3498db; text-decoration: none; margin-right: 15px;">翻譯服務</a>
+        <a href="/tw/credentials.html" style="color: #3498db; text-decoration: none; margin-right: 15px;">學歷資歷</a>
+        <a href="/tutoring.html" style="color: #3498db; text-decoration: none;">English</a>
+    </div>
+
+    <h1>一對一英語教學</h1>
+    <p class="subtitle">專為華語學習者設計的個人化英語課程</p>
+
+    <h2>關於課程</h2>
+    <p>一對一英語課程，依照您的具體目標量身設計，由能以中文溝通且了解您背景的教師授課，提供線上及面授課程。</p>
+
+    <p>每門課程皆根據詳細的需求分析從零設計。課程不使用一般教科書，而是聚焦於您實際需要的語言情境，無論是機場通關、商務會議，還是學術簡報準備。</p>
+
+    <p>所有教材皆為自編，並提供英文及繁體中文雙語版本，讓您隨時有母語參考。</p>
+
+    <h2>課程流程</h2>
+
+    <h3>需求分析</h3>
+    <p>每門課程皆從了解您的目標、目前程度及需要使用英語的情境開始。這將決定後續的一切：涵蓋的主題、進度，以及口說、聽力、閱讀和詞彙之間的比重。</p>
+
+    <h3>量身課程設計</h3>
+    <p>根據需求分析，為您設計專屬課程。每堂課皆附完整教材：結構化學習單、雙語詞彙參考表及補充活動。教材會在課前寄出，讓您可依自己的步調預習。</p>
+
+    <h3>上課方式</h3>
+    <p>每堂課一小時，透過視訊或面授進行。課程結合結構化練習與實境角色扮演，並搭配真實情境的音訊及影片素材。課堂中全程可使用中文進行說明及釐清，目標是建立自信的溝通能力，而非為了沉浸式教學而排除母語。</p>
+
+    <h2>現有課程</h2>
+
+    <h3>旅遊英語</h3>
+    <p>適合初學者及初級學習者的實用旅遊英語。涵蓋最常遇到的情境：機場報到、購物、用餐、飯店及交通。重點在於實用短句及聽力信心的建立，包括練習在真實旅行中會遇到的各種口音及說話方式。</p>
+
+    <h3>其他主題</h3>
+    <p>課程可為任何程度的學習者設計，從初學者到高級皆可，並可配合任何目標。無論您需要職場英語、學術寫作支援、考試準備，或其他需求，歡迎來信討論。</p>
+
+    <h2>費用</h2>
+    <p>費用視課程類型及教材開發需求而定。請來信告知您的具體目標以取得報價。</p>
+
+    <h2>常見問題</h2>
+
+    <div class="faq-item">
+        <div class="faq-question">需要什麼程度才能上課? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">
+            <p>任何程度皆可，包括完全初學者。課程依您目前的能力設計，全程可使用中文輔助。沒有最低程度限制。</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">如何上課? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">
+            <p>多數課程透過視訊進行（Google Meet）。您不需安裝任何軟體或建立帳號，只需點擊課前寄送的連結即可。亦可安排面授課程。</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">課堂上會使用多少中文? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">
+            <p>依您的需求而定。中文隨時可用於說明、詞彙解釋及釐清疑問。目標是建立您的英文信心，而非製造不必要的壓力。隨著程度提升，英文的比重會自然增加。</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">建議多久上一次課? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">
+            <p>多數學生認為每週一次效果最好，課間有充足時間複習教材。不過時間安排彈性，可依您的行程調整。</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">會收到什麼教材? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">
+            <p>每堂課皆附雙語學習單及詞彙參考表，於課前寄出。視需要另提供補充練習或課後閱讀。所有教材皆為您的課程專門設計，並非取自教科書。</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">可以在什麼時間上課? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">
+            <p>上課時間彈性安排，配合您的時間。來信時請告知您偏好的時段。</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">是否也提供校對及翻譯服務? <span class="faq-toggle">+</span></div>
+        <div class="faq-answer">
+            <p>是的。本人亦提供學術英文校對及中翻英服務。詳情請參閱<a href="/tw/" style="color: #3498db;">校對服務</a>及<a href="/tw/translation.html" style="color: #3498db;">翻譯服務</a>頁面。</p>
+        </div>
+    </div>
+
+    <h2>聯絡方式</h2>
+    <div class="contact-form">
+        <h3 style="margin-top: 0;">課程諮詢</h3>
+        <form action="https://formsubmit.co/673a2100e768060a022038141e3b77ec" method="POST">
+            <input type="hidden" name="_replyto" value="email">
+            <input type="hidden" name="_subject" value="英語教學諮詢">
+
+            <div class="form-group">
+                <label for="name">姓名 <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">電子郵件 <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="english-level">您的英文程度 <span class="required">*</span></label>
+                <select id="english-level" name="english-level" required>
+                    <option value="">請選擇...</option>
+                    <option value="beginner">初學者</option>
+                    <option value="elementary">初級</option>
+                    <option value="intermediate">中級</option>
+                    <option value="upper-intermediate">中高級</option>
+                    <option value="advanced">高級</option>
+                    <option value="unsure">不確定</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">您想學習什麼? <span class="required">*</span></label>
+                <textarea id="message" name="message" placeholder="請告訴我您的學習目標，例如旅遊英語、職場英語、考試準備，或其他想改善的方面。" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">送出詢問</button>
+
+            <p class="form-note">通常 24 小時內回覆。歡迎用中文或英文聯繫。</p>
+        </form>
+
+        <div class="alternative-contact">
+            <p><strong>偏好使用電子郵件?</strong></p>
+            <p>您亦可直接來信至：<strong>contact@bdtranslations.com</strong></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 BDTranslations | 華語學習者一對一英語教學</p>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-question');
+        
+        faqItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const toggle = this.querySelector('.faq-toggle');
+                
+                answer.classList.toggle('active');
+                toggle.classList.toggle('active');
+            });
+        });
+    });
+    </script>
+
+</body>
+</html>
