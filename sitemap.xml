@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://bdtranslations.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bdtranslations.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://bdtranslations.com/tw/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://bdtranslations.com/tw/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bdtranslations.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://bdtranslations.com/tw/"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://bdtranslations.com/translation.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bdtranslations.com/translation.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://bdtranslations.com/tw/translation.html"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bdtranslations.com/tw/translation.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bdtranslations.com/translation.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://bdtranslations.com/tw/translation.html"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://bdtranslations.com/tutoring.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bdtranslations.com/tutoring.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://bdtranslations.com/tw/tutoring.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bdtranslations.com/tw/tutoring.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bdtranslations.com/tutoring.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://bdtranslations.com/tw/tutoring.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://bdtranslations.com/credentials.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bdtranslations.com/credentials.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://bdtranslations.com/tw/credentials.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://bdtranslations.com/tw/credentials.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bdtranslations.com/credentials.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://bdtranslations.com/tw/credentials.html"/>
+    <priority>0.7</priority>
+  </url>
+</urlset>
